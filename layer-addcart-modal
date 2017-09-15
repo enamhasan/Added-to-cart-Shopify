@@ -1,0 +1,43 @@
+<div id="layer-addcart-modal" style="display: none; position: fixed;  top: 0%; left: 0%; width: 100%; height: 100%; ">
+  <div class="layer-addcart-modal">
+
+    <div class="addcart-overlay"></div>
+
+    <div class="addcart-modal-box" style="display: none;">
+
+      <div class="addcart-modal-content">
+        <p class="note">
+          <i class="fa fa-check"></i>
+          {{ 'general.cart_modal.cart_modal_successfully' | t }}
+        </p>
+
+        <div class="addcart-modal-product">
+          <div class="addcart-modal-image"></div>
+          <div class="addcart-modal-info">
+            <div class="addcart-modal-title"></div>
+            <div class="addcart-modal-variant"></div>
+            <div class="addcart-modal-qty"></div>
+            <div class="addcart-modal-price"></div>
+          </div>
+        </div>
+
+        <div class="addcart-modal-action">
+          <div class="addcart-modal-number"></div>
+          <div class="addcart-modal-subtotal"></div>
+          <div class="addcart-modal-button">
+            <div class="addcart-modal-continue">
+              <a href="javascript:void(null)" onclick="addcartModalHide()" class="btn btn-custom btn-continue">{{ 'cart.general.continue_shopping' | t }}</a>
+            </div>
+            <div class="addcart-modal-checkout">
+              <a class="btn btn-default" href="/cart">{{ 'cart.general.checkout' | t }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="addcart-modal-close" onclick="addcartModalHide()" title="{{ 'customer.general.close' | t }}"><i class="fa fa-times"></i></div>
+
+    </div>
+
+  </div>    
+</div>
